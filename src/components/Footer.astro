@@ -1,0 +1,87 @@
+---
+const today = new Date();
+import { SITE_TITLE } from "../consts";
+---
+
+<footer>
+  <div class="container">
+    <div class="ftr-left">
+      <div class="copy">
+        &copy; {SITE_TITLE}&nbsp;{today.getFullYear()} - Todos os direitos
+        reservados.
+      </div>
+      <a href="https://pappoconsult.com.br" class="logo"
+        ><img src="/img/logo.png" alt="logo" class="logo" /></a
+      >
+    </div>
+    <div class="ftr-right">
+      <a href="mailto:queroserpappo@pappoconsult.com.br">
+        <div>Email:</div>
+        <div>queroserpappo@pappoconsult.com.br</div>
+      </a>
+      <a href="tel:+5524992544982">
+        <div>Telefone:</div>
+        <div>(24) 99254 4982</div>
+      </a>
+    </div>
+  </div>
+  <style>
+    footer {
+      font-weight: 300;
+      background: rgba(0, 0, 0, 0.5);
+      backdrop-filter: blur(19px);
+      -webkit-backdrop-filter: blur(19px);
+    }
+
+    footer .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .ftr-left,
+    .ftr-right {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .ftr-right a {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      color: var(--color-lnk);
+      text-decoration: none;
+	  gap: 1rem;
+    }
+
+    .ftr-right a div:first-child {
+      color: var(--accent-dark);
+    }
+
+    footer a {
+      text-decoration: none;
+    }
+
+    footer .logo {
+      height: 32px;
+      width: auto;
+    }
+
+    @media (max-width: 800px) {
+      footer .logo {
+        display: none;
+      }
+
+	  footer .ftr-left {
+		font-size: 1.1rem;
+	  }
+
+      footer .container {
+        justify-content: center;
+        gap: unset;
+      }
+    }
+  </style>
+</footer>

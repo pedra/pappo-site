@@ -1,0 +1,129 @@
+/*
+  Author: Bill Rocha | prbr@ymail.com | billrocha.com
+ */
+
+.hero-image {
+	width: 100%;
+	margin: 0 0 1rem 0;
+}
+
+.hero-image img,
+.hero-image video {
+	display: block;
+	margin: 0 auto;
+	border-radius: 12px;
+	box-shadow: var(--box-shadow);
+
+	width: 100%;
+	height: auto;
+	aspect-ratio: 16 / 9;
+}
+
+.prose {
+	margin: auto;
+	padding: 1rem;
+}
+
+.title {
+	text-align: center;
+	line-height: 1;
+}
+
+.title h1 {
+	margin: 0 0 0.5rem 0;
+}
+
+.date {
+	margin-bottom: 0.5rem;
+	color: var(--accent);
+	text-align: center;
+}
+
+.last-updated-on {
+	font-style: italic;
+}
+
+.blog-index ul {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 2rem;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.blog-index ul li {
+	width: calc(50% - 1rem);
+}
+
+.blog-index ul li * {
+	text-decoration: none;
+	transition: 0.2s ease;
+}
+
+.blog-index ul li:first-child {
+	width: 100%;
+	margin-bottom: 1rem;
+	text-align: center;
+}
+
+.blog-index ul li:first-child img {
+	width: 100%;
+}
+
+.blog-index ul li:first-child .title {
+	font-size: 2.369rem;
+}
+
+.blog ul li img {
+	margin-bottom: 2rem;
+	border-radius: 12px;
+}
+
+.blog ul li a {
+	display: block;
+}
+
+.title {
+	margin: 2rem 0;
+	color: var(--color);
+	line-height: 1;
+}
+
+h4.title {
+	margin: 0;
+}
+
+.date {
+	margin: 0;
+	color: var(--accent);
+}
+
+.blog-index ul li a:hover h4,
+.blog-index ul li a:hover .date {
+	color: var(--accent-dark);
+}
+
+.blog ul a:hover img {
+	box-shadow: var(--box-shadow);
+}
+
+@media (max-width: 720px) {
+
+	.blog-index ul li:first-child {
+		margin-bottom: 0;
+	}
+
+	.blog-index ul li:first-child .title {
+		font-size: 1.563rem;
+	}
+
+	.hero-image {
+		width: auto;
+			margin: -2rem -1rem 1rem -1rem;
+	}
+
+	.hero-image img {
+		border-radius: 0;
+	}
+}

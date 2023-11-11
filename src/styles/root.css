@@ -1,0 +1,35 @@
+/*
+  Author: Bill Rocha | prbr@ymail.com | billrocha.com
+ */
+:root {
+	--color: #f0f0f0;
+	--color-inv: #234;
+
+	--bg: #234;
+	--bg-inv: #f0f0f0;
+
+	--h-color: #def;
+
+	--accent: #eeF;
+	--accent-dark: #eec01b;
+	--accent-orange: 204, 153, 0;
+
+
+	/* HEADER */
+	--header-bg: rgba(17, 34, 51, 0.8);
+	/* --header-bg: rgba(0, 0, 0, 0.3); */
+	--header-color: var(--color);
+
+	/* Buttons */
+	--btn-primary-1: #7963db;
+	--btn-primary-2: #37287c;
+
+	/* Other colors */
+	--black: rgb(187, 199, 228);
+	--gray: rgb(255, 255, 255);
+	--gray-light: rgba(229, 233, 240);
+	--gray-dark: rgba(34, 41, 57);
+	--gray-dark-md: #999;
+
+	--box-shadow: 0 0 6px #eec01b, 0 16px 60px rgba(255, 255, 255, 0.4);
+}

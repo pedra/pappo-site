@@ -1,0 +1,187 @@
+/*
+  Author: Bill Rocha | prbr@ymail.com | billrocha.com
+ */
+
+@font-face {
+	font-family: 'Atkinson';
+	src: url('/fonts/atkinson-regular.woff') format('woff');
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Atkinson';
+	src: url('/fonts/atkinson-bold.woff') format('woff');
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+}
+
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	overflow-wrap:normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0 0 0.5rem 0;
+	color: var(--h-color);
+	line-height: 1.2;
+}
+
+h1 {
+	font-size: 3.052rem;
+}
+
+h2 {
+	font-size: 2.441rem;
+}
+
+h3 {
+	font-size: 1.953rem;
+}
+
+h4 {
+	font-size: 1.563rem;
+}
+
+h5 {
+	font-size: 1.25rem;
+}
+
+strong,
+b {
+	font-weight: 700;
+}
+
+a {
+	color: var(--accent);
+}
+
+a:hover {
+	color: var(--accent);
+}
+
+p {
+	margin-bottom: 1rem;
+}
+
+.prose p {
+	margin-bottom: 2rem;
+}
+
+textarea {
+	width: 100%;
+	font-size: 16px;
+}
+
+input {
+	font-size: 16px;
+}
+
+button,
+input,
+select,
+textarea {
+	font-size: 1rem;
+	font-family: inherit;
+}
+
+table {
+	width: 100%;
+}
+
+img {
+	width: 100%;
+	height: auto;
+	border-radius: 8px;
+	aspect-ratio: 16 / 9;
+}
+
+hr {
+	border: none;
+	border-top: 1px solid var(--gray-light);
+}
+
+code {
+	padding: 2px 5px;
+	background-color: var(--gray-light);
+	border-radius: 2px;
+}
+
+pre {
+	padding: 1.5rem;
+	border-radius: 8px;
+}
+
+pre>code {
+	all: unset;
+}
+
+blockquote {
+	border-left: 4px solid var(--accent);
+	padding: 0 0 0 20px;
+	margin: 0px;
+	font-size: 1.333rem;
+}
+
+ul, ol {
+	flex-wrap: wrap;
+	list-style-type: circle;
+	margin: 0 0 0 2rem;
+	padding: 0;
+}
+
+ol {
+	list-style-type: decimal;
+}
+
+/* Form */
+button,
+input {
+	border-radius: 2rem;
+	border: none;
+	width: fit-content;
+}
+
+button {
+	padding: .5rem 2rem;
+	color: var(--color);
+	background-image: linear-gradient(to bottom, var(--btn-primary-1), var(--btn-primary-2));
+	cursor: pointer;
+}
+
+input {
+	width: 100%;
+	color: var(--btn-primary-2);
+	box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5) inset;
+	padding: .5rem 1rem;
+}
+
+label {
+	position: absolute;
+	margin: .45rem 0 0 1rem;
+	color: var(--gray-dark-md);
+	z-index: 3;
+	transition: .6s;
+}
+
+input:focus~label,
+input:valid~label {
+	margin: .45rem 0 0 3rem;
+	opacity: 0;
+	color: var(--color);
+}
+
+@media (max-width: 720px) {
+
+}

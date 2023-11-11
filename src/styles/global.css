@@ -1,0 +1,77 @@
+/*
+  Author: Bill Rocha | prbr@ymail.com | billrocha.com
+ */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500;700;900&display=swap');
+@import url(./root.css);
+@import url(./reset.css);
+@import url(./blog.css);
+@import url(./home.css);
+@import url(./theme-dark.css);
+
+body {
+	font-family: 'Poppins', sans-serif;
+	margin: 0;
+	padding: 0;
+	text-align: left;
+
+	word-wrap: break-word;
+	overflow-wrap: break-word;
+	color: var(--color);
+	background-color: rgb(77, 12, 30);
+	background-color: rgb(102, 72, 72);
+	/* background-color: rgb(46, 39, 77); */
+	font-size: 16px;
+	line-height: 1.7;
+	height: 100vh;
+	width: 100%;
+
+	min-width: 360px;
+}
+
+body,
+main {
+	display: flex;
+	flex-direction: column;
+}
+
+main {
+	width: 100%;
+	margin: auto;
+	padding: 1rem 0;
+	flex: 1;
+	align-items: center;
+}
+
+.container {
+	width: 100%;
+	max-width:928px;
+	margin: 0 auto;
+	padding: 1rem;
+}
+
+.center {
+	justify-content: center;
+	align-items: center;
+}
+
+.bkg {
+	position: fixed;
+	inset: 0;
+	background: url(/img/bg.jpg) top center no-repeat;
+	background-color: var(--bg);
+	background-size: cover;
+	z-index: -1;
+	opacity: .9;
+}
+
+.bkg.blur {
+	filter: blur(16px);
+	opacity: .5;
+}
+
+@media (max-width: 720px) {
+	body {
+		font-size: 14px;
+	}
+
+}

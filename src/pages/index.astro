@@ -1,0 +1,28 @@
+---
+import BaseHead from "../components/BaseHead.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+  </head>
+  <body>
+    <div class="bkg"></div>
+    <Header title={SITE_TITLE} />
+    <main class="center">
+      <div class="home">
+        <div class="container">
+          <h1>Soluções Estratégicas & Inovadoras</h1>
+          <p>
+            Estamos construindo um lugar onde você será acolhido com...
+          </p>
+        </div>
+      </div>
+    </main>
+    <Footer />
+  </body>
+</html>
